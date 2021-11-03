@@ -2,11 +2,11 @@ package Roman_to_Integer;
 
 public class Solution {
     public int romanToInt(String s) {
-        int num = 0;
+        int num = 0;        // number
 
-        for (int i = s.length() - 1; i >= 0; i--){
-            String c = s.charAt(i)+"";
-            char prev = i+1<s.length() ? s.charAt(i+1):'*';
+        for (int i = s.length() - 1; i >= 0; i--){      // run through string in reverse order
+            String c = s.charAt(i) + "";        // set char
+            char prev = i + 1 < s.length() ? s.charAt(i+1):'*';
 
             if(c.equals("I")){
                 num += 1;
