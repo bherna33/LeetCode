@@ -1,4 +1,6 @@
-public class Running_Sum_of_1d_Array {
+package Running_Sum_of_1d_Array;
+
+public class Solution {
     public int[] runningSum(int[] nums) {
 
         int [] ans = new int[nums.length];      // create array
